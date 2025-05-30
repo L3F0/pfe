@@ -1,0 +1,389 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: black;
+  color: #e7e7e7;
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* BLUR EFFECT LI F BG */
+
+.image-gradient {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.layer-blur {
+  height: 0;
+  width: 30rem;
+  position: absolute;
+  top: 20%;
+  right: 0;
+  box-shadow: 0 0 700px 15px white;
+  rotate: -30deg;
+  z-index: -1;
+}
+
+/* CONTAINER */
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 4rem;
+  font-weight: 300;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-left: -5%;
+}
+
+nav a {
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  transition: color 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+nav a:hover {
+  color: #a7a7a7;
+}
+
+.btn-signin {
+  background-color: #a7a7a7;
+  color: black;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-signin:hover {
+  background-color: white;
+}
+
+/* MAIN */
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: calc(90vh - 6rem);
+}
+
+.content {
+  max-width: 40rem;
+  margin-left: 10%;
+  z-index: 999;
+}
+
+.tag-box {
+  position: relative;
+  width: 18rem;
+  height: 2.5rem;
+  border-radius: 50px;
+  background: linear-gradient(to right, #a7a7a7, #d88405, #be7508, #dbb50c, #e7e7e7, #a7a7a7);
+  background-size: 200%;
+  animation: animationGradient 2.5s linear infinite;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+@keyframes animationGradient {
+  to {
+    background-position: 200%;
+  }
+}
+
+.tag-box .tag {
+  position: absolute;
+  inset: 3px 3px 3px;
+  background-color: black;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.tag-box .tag:hover {
+  color: #d88405;
+}
+
+.content h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  margin: 2rem 0;
+  line-height: 1.2;
+  text-shadow: 0 0 10px rgba( 128, 128, 128, 0.418);
+}
+
+.description {
+  display: flex;
+  gap: 1rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-get-started {
+  text-decoration: none;
+  border: 1px solid #2a2a2a;
+  padding: 0.7rem 1.2rem;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  color: #d88405;
+  transition: background-color 0.2s ease;
+}
+
+.btn-get-started:hover {
+  background-color: #2a2a2a;
+  color: #d88405;
+}
+
+.btn-signin-main {
+  text-decoration: none;
+  background-color: lightgray;
+  color: black;
+  padding: 0.6rem 2.5rem;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  transition: background-color 0.2s ease;
+}
+
+.btn-signin-main:hover {
+  background-color: grey;
+}
+
+.l3fo {
+  position: absolute;
+  top: 0;
+  right: -25%;
+}
+
+/* phone respons */
+
+@media (max-width: 1300px) {
+  header {
+    padding: 1rem 0.5rem;
+  }
+}
+
+@media (max-width: 1300px) {
+  .content {
+    margin-top: 85%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .l3fo {
+    scale: 0.8;
+    top: -20%;
+    right: 1%;
+  }
+}
+
+/* phone respons */
+
+@media (max-width: 768px) {
+  header {
+    padding: 1rem 0.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn-signin {
+    padding: 0.6rem 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    margin-top: 25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .l3fo {
+    scale: 0.5;
+    top: -25%;
+    right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .tag-box {
+    width: 12rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .content h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn-get-started {
+    font-size: 1rem;
+    padding: 0.8rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn-signin-main {
+    font-size: 0.8rem;
+    padding: 0.8rem 2rem;
+  }
+}
+
+/* PRODUCT PAGE STYLES */
+
+.product-page-content {
+  text-align: center;
+  padding: 3rem 1rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-page-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 2.5rem;
+  color: #e7e7e7;
+  text-shadow: 0 0 8px rgba(231, 231, 231, 0.3);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+  justify-items: center;
+}
+
+.product-item {
+  background-color: rgba(26, 26, 26, 0.8);
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 320px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.product-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+}
+
+.product-item img {
+  max-width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  background-color: #333;
+  border: 1px solid #444;
+}
+
+.product-item h2 {
+  font-size: 1.6rem;
+  color: #e7e7e7;
+  margin-bottom: 0.5rem;
+}
+
+.product-item .product-description {
+  font-size: 0.9rem;
+  color: #b0b0b0;
+  margin-bottom: 1rem;
+  min-height: 50px;
+}
+
+.product-item .product-price {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #d88405;
+  margin-bottom: 1.2rem;
+}
+
+.btn-buy {
+  background-color: #d88405;
+  color: black;
+  padding: 0.8rem 1.8rem;
+  border-radius: 50px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.btn-buy:hover {
+  background-color: #be7508;
+  transform: scale(1.05);
+}
+
+/*  */
+

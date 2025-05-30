@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - lEFo</title> <!-- Updated title -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="Slaytanic.css">
+    <style>
+        /* Styles copied from index.html for consistency */
+        .logo {
+            font-family: 'Slaytanic', sans-serif;
+        }
+        .cart-icon-container {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+        }
+        .cart-item-count {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background-color: #d88405; /* checkout color button */
+            color: white;
+            border-radius: 50%;
+            padding: 2px 6px;
+            font-size: 0.7rem;
+            font-weight: bold;
+            min-width: 18px; /* cart nuumber */
+            text-align: center;
+        }
+
+        /* Styles for the About Us content */
+        .about-content {
+            max-width: 800px; /* Limit width for readability */
+            margin: 40px auto; /* Center block element horizontally */
+            padding: 20px;
+            text-align: center; /* Center text and inline elements within the block */
+            color: white; /* Assuming text color is white like index.html */
+            /* Add background or border if needed to match style, e.g., */
+            /* background-color: rgba(0, 0, 0, 0.5); */
+            /* border-radius: 10px; */
+        }
+
+        .about-content h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-family: 'Slaytanic', sans-serif; /* Use the logo font */
+        }
+
+        .about-content h2 {
+             font-size: 1.8em;
+             margin-top: 30px;
+             margin-bottom: 15px;
+             font-family: 'Slaytanic', sans-serif;
+        }
+
+        .about-content p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin: 0 15px;
+            color: white; /* Social icon color */
+            font-size: 1.8em; /* Icon size */
+            transition: transform 0.3s ease;
+        }
+
+        .social-links a:hover {
+            transform: scale(1.1);
+            color: #d88405; /* Hover color */
+        }
+
+        /* Add some padding to the container to prevent content from touching edges */
+        .container {
+             padding: 0 20px; /* Example padding */
+        }
+
+        /* Optional: Style for the active navigation link */
+        nav a.active {
+            color: #d88405; /* Highlight color for the current page link */
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <img class="image-gradient" src="gradient.png" alt="gradient">
+    <div class="layer-blur"></div>
+
+    <div class="container">
+        <header>
+            <h1 data-aos="fade-down" data-aos-duration="1500" class="logo">lEFo</h1>
+            <nav>
+                <a data-aos="fade-down" data-aos-duration="1500" href="index.php" title="Home" class="nav-icon-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                </a>
+                <a data-aos="fade-down" data-aos-duration="1500" href="about.html">ABOUT US</a>
+                <a data-aos="fade-down" data-aos-duration="2000" href="product.php">PRODUCTS</a>
+                <a data-aos="fade-down" data-aos-duration="2500" href="submit-design.php">SUBMIT YOUR DESIGN</a>
+                <a data-aos="fade-down" data-aos-duration="3000" href="cart.php" title="Cart" class="cart-icon-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                    <span class="cart-item-count" id="cart-count-badge">0</span> <!-- Placeholder count -->
+                </a>
+            </nav>
+            <button data-aos="fade-down" data-aos-duration="1500" class="btn-signin">SIGN IN</button>
+        </header>
+
+        <main>
+            <div class="about-content">
+                <h1>About lEFo</h1>
+                <p>
+                    Welcome to LEFO, where imagination meets innovation in the world of Urban fashion.
+                    We are a startup dedicated to bringing your unique style to life through cutting-edge
+                    3D printing technology. Our mission is to empower individuals to express themselves
+                    with custom-designed apparel and accessories that are as unique as they are.
+                </p>
+                <p>
+                    Founded in [2022], LEFO started with a vision to revolutionize the fashion industry
+                    by offering sustainable, personalized, and high-quality 3D-printed products.
+                    We work closely with designers and customers to turn creative concepts into tangible,
+                    wearable art.
+                </p>
+                <p>
+                    Join us on this exciting journey as we redefine style, one layer at a time.
+                </p>
+
+                <div class="social-links">
+                    <h2>Follow Us</h2>
+                    <!-- Replace '#' with your actual social media links -->
+                    <!-- You can find SVG icons from libraries like Feather Icons, Font Awesome, etc. -->
+                    <a href="#" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                    <a href="#" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+                    <a href="#" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                    <a href="#" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+                    <!-- Add more social media links as needed -->
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <!-- AOS script is included, but you might remove it or add data-aos attributes to elements if you want animations -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+       // sign in buttona
+      const signInButton = document.querySelector('.btn-signin');
+      if (signInButton) {
+          signInButton.addEventListener('click', function() {
+              window.location.href = 'signin.php';
+          });
+      }
+    </script>
+
+</body>
+</html>

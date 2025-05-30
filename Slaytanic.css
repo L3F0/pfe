@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'Slaytanic';
+	src: url(../../assets/fonts/Slaytanic-9e0b968717c9b441a8fea288f031860d.woff2) format('woff2'),
+	url(../../assets/fonts/Slaytanic-fda6357881e8683e16194e06861249ac.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
